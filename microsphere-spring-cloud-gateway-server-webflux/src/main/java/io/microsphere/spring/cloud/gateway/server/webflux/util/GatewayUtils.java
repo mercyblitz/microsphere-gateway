@@ -16,6 +16,7 @@
  */
 package io.microsphere.spring.cloud.gateway.server.webflux.util;
 
+import io.microsphere.annotation.Nonnull;
 import io.microsphere.util.Utils;
 import org.springframework.cloud.gateway.config.GatewayProperties;
 import org.springframework.cloud.gateway.event.RefreshRoutesResultEvent;
@@ -23,7 +24,6 @@ import org.springframework.cloud.gateway.route.RouteDefinition;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.Environment;
-import org.springframework.lang.NonNull;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -50,7 +50,7 @@ public abstract class GatewayUtils implements Utils {
      * @param environment {@link ConfigurableEnvironment}
      * @return non-null
      */
-    @NonNull
+    @Nonnull
     public static Map<String, Object> getGatewayProperties(ConfigurableEnvironment environment) {
         return getSubProperties(environment, PREFIX);
     }
@@ -63,7 +63,7 @@ public abstract class GatewayUtils implements Utils {
      * @param routeId     the id of {@link RouteDefinition}
      * @return non-null
      */
-    @NonNull
+    @Nonnull
     public static Map<String, Object> getRouteProperties(ConfigurableEnvironment environment, String routeId) {
         Map<String, Object> gatewayProperties = getGatewayProperties(environment);
         String prefix = null;

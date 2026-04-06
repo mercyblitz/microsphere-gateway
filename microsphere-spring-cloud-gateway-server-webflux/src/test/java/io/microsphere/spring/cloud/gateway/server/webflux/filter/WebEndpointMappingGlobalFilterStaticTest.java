@@ -17,7 +17,6 @@
 
 package io.microsphere.spring.cloud.gateway.server.webflux.filter;
 
-import io.microsphere.spring.cloud.gateway.server.webflux.filter.WebEndpointMappingGlobalFilter;
 import org.junit.jupiter.api.Test;
 import org.springframework.cloud.client.DefaultServiceInstance;
 import org.springframework.cloud.client.ServiceInstance;
