@@ -18,7 +18,6 @@
 package io.microsphere.spring.cloud.gateway.server.webflux.constants;
 
 
-import io.microsphere.spring.cloud.gateway.server.webflux.constants.GatewayPropertyConstants;
 import org.junit.jupiter.api.Test;
 
 import static io.microsphere.constants.PropertyConstants.ENABLED_PROPERTY_NAME;

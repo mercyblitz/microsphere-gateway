@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.github.microsphere-projects</groupId>
-        <artifactId>microsphere-build</artifactId>
-        <version>0.2.2</version>
+        <artifactId>microsphere-spring-cloud-parent</artifactId>
+        <version>0.2.8</version>
     </parent>
 
     <groupId>io.github.microsphere-projects</groupId>
@@ -14,8 +14,8 @@
     <version>${revision}</version>
     <packaging>pom</packaging>
 
-    <name>Microsphere :: Gateway :: Spring Cloud Gateway Server WebFlux</name>
-    <description>Microsphere Spring Cloud Gateway Server WebFlux</description>
+    <name>Microsphere :: Gateway :: Spring Cloud Gateway</name>
+    <description>Microsphere Spring Cloud Gateway</description>
 
     <organization>
         <name>Microsphere</name>
