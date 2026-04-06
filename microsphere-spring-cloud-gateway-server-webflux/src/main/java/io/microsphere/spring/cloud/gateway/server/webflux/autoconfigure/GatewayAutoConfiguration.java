@@ -16,6 +16,7 @@
  */
 package io.microsphere.spring.cloud.gateway.server.webflux.autoconfigure;
 
+import io.microsphere.spring.cloud.gateway.commons.annotation.ConditionalOnMicrosphereGatewayEnabled;
 import io.microsphere.spring.cloud.gateway.server.webflux.annotation.ConditionalOnGatewayEnabled;
 import io.microsphere.spring.cloud.gateway.server.webflux.event.DisabledHeartbeatEventRouteRefreshListenerInterceptor;
 import io.microsphere.spring.cloud.gateway.server.webflux.event.PropagatingRefreshRoutesEventApplicationListener;
@@ -36,6 +37,7 @@ import org.springframework.context.annotation.Import;
  */
 @Configuration(proxyBeanMethods = false)
 @ConditionalOnGatewayEnabled
+@ConditionalOnMicrosphereGatewayEnabled
 @AutoConfigureAfter(org.springframework.cloud.gateway.config.GatewayAutoConfiguration.class)
 @EnableEventExtension
 @Import(value = {
