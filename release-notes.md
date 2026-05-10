@@ -13,3 +13,20 @@
 - **Build Tools**: Updated Maven wrapper to version 3.9.15. ([cbc93c6](https://github.com/microsphere-projects/commit/cbc93c6))
 - **Workflows**: Adjusted GitHub workflow permissions to read-only for contents. ([21abd7c](https://github.com/microsphere-projects/commit/21abd7c))  
 
+## v0.1.4
+
+# Release Notes - Version 0.1.4
+
+## Dependency Updates
+- Upgraded parent POM version to `0.1.11`. ([2004256](#))
+- Bumped `microsphere-spring-cloud` to `0.1.11`. ([a5cf317](#))
+
+## Documentation
+- Updated README to reflect new branch version numbers. ([2fda6c4](#))
+- Enhanced release notes and release creation process. ([cd6cebc](#))
+
+## Build and Workflow Enhancements
+- Merged `release-1.x` branch into `dev-1.x`. ([fe9a3cf](#))
+- Bumped version to the next patch after publishing `0.1.3`. ([0c94a5d](#))
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.3...0.1.4
