@@ -29,4 +29,21 @@
 - Merged `release-1.x` branch into `dev-1.x`. ([fe9a3cf](#))
 - Bumped version to the next patch after publishing `0.1.3`. ([0c94a5d](#))
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.3...0.1.4
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.3...0.1.4## v0.1.5
+
+# Release Notes - Version 0.1.5
+
+## Dependency Updates
+- Bumped `microsphere-spring-cloud` to version 0.1.12.
+
+## Documentations
+- Updated branch names and version references in the `README`.
+
+## Build and Workflow Enhancements
+- Added Maven server credentials to the CI workflow.
+- Improved Maven workflows by enabling caching and switching `mvnw` with `mvn`.
+
+## Other Changes
+- Prepared for the next patch release by bumping the version post 0.1.4.
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.4...0.1.5
