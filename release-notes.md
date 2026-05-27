@@ -46,4 +46,27 @@
 ## Other Changes
 - Prepared for the next patch release by bumping the version post 0.1.4.
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.4...0.1.5
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.4...0.1.5## v0.1.6
+
+# Release Notes: Version 0.1.6
+
+## New Features
+- Added prompt templates for developer tasks in `.github`. ([c2404ef])
+- Set default values in the "explain-code" prompt. ([c81c8f0])
+
+## Documentation
+- Revamped `README`: reorganized content and improved usage documentation. ([4f26fb5])
+- Added `CONTRIBUTING.md` guide and updated `README`. ([e287e69])
+- Included instructions for GitHub Copilot usage. ([d252ae4])
+
+## Dependency Updates
+- Upgraded `microsphere-spring-cloud` dependency to `0.1.13`. ([bec3cda])
+
+## Build and Workflow Enhancements
+- Merged `release-1.x` into `dev-1.x` for consistency. ([f46a981])
+
+---
+
+*This release includes minor enhancements, documentation updates, and improved workflows to streamline development.* 
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.5...0.1.6
