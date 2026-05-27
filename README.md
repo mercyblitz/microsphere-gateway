@@ -12,8 +12,7 @@ endpoints behind a single gateway without duplicating route definitions in every
 
 ## Why It's Useful
 
-- **Use the stack you already run** with dedicated modules for Spring Cloud Gateway WebFlux and Spring Cloud Gateway
-  Server MVC.
+- **Use the stack you already run** with dedicated modules for Spring Cloud Gateway WebFlux.
 - **Route discovered web endpoints dynamically** through the custom `we://` route scheme backed by Spring Cloud
   discovery.
 - **Keep routes current** when gateway configuration, route definitions, or service instances change.
@@ -29,18 +28,17 @@ endpoints behind a single gateway without duplicating route definitions in every
 | `microsphere-gateway-dependencies`                | BOM for dependency management                                         |
 | `microsphere-spring-cloud-gateway-commons`        | Shared constants, annotations, and configuration binding              |
 | `microsphere-spring-cloud-gateway-server-webflux` | Reactive gateway integration for Spring Cloud Gateway                 |
-| `microsphere-spring-cloud-gateway-server-webmvc`  | Servlet-based gateway integration for Spring Cloud Gateway Server MVC |
 
 ## Getting Started
 
 ### Prerequisites
 
-- JDK 17 or newer
+- JDK 8 or newer
 - Maven 3.9+ or the included Maven Wrapper
 - A Spring Cloud application using a supported release train
 - A discovery client setup for the services you want the gateway to route to
 
-The CI build covers Java 17, 21, and 25 against Spring Cloud `2022`, `2023`, `2024`, and `2025` profiles.
+The CI build covers Java 8, 11, 17, 21, and 25 against Spring Cloud `spring-cloud-hoxton`, `spring-cloud-2020`, `spring-cloud-2021` profiles.
 
 ### 1. Import the BOM
 
@@ -66,15 +64,6 @@ The CI build covers Java 17, 21, and 25 against Spring Cloud `2022`, `2023`, `20
 <dependency>
     <groupId>io.github.microsphere-projects</groupId>
     <artifactId>microsphere-spring-cloud-gateway-server-webflux</artifactId>
-</dependency>
-```
-
-**Server MVC**
-
-```xml
-<dependency>
-    <groupId>io.github.microsphere-projects</groupId>
-    <artifactId>microsphere-spring-cloud-gateway-server-webmvc</artifactId>
 </dependency>
 ```
 
@@ -104,25 +93,6 @@ spring:
                   methods: GET
 ```
 
-**Server MVC**
-
-```yaml
-spring:
-  cloud:
-    gateway:
-      mvc:
-        routes:
-          - id: web-endpoint-mapping
-            uri: we://all
-            predicates:
-              - Path=/{application}/**
-            metadata:
-              web-endpoint:
-                excludes:
-                  - patterns: /internal/**
-                    methods: GET
-```
-
 By default, Microsphere Gateway is enabled. You can turn features off with:
 
 ```yaml
@@ -139,18 +109,16 @@ microsphere:
 
 ```bash
 ./mvnw package
-./mvnw test -Ptest,spring-cloud-2025
+./mvnw test -Ptest,spring-cloud-2021
 ```
 
 ## Getting Help
 
 - [Issue tracker](https://github.com/microsphere-projects/microsphere-gateway/issues) for bugs and feature requests
 - [Project wiki](https://github.com/microsphere-projects/microsphere-gateway/wiki) for broader documentation
-- [DeepWiki](https://deepwiki.com/microsphere-projects/microsphere-gateway)
-  and [ZRead](https://zread.ai/microsphere-projects/microsphere-gateway) for browsable project context
--
-Javadocs: [WebFlux](https://javadoc.io/doc/io.github.microsphere-projects/microsphere-spring-cloud-gateway-server-webflux)
-and [Server MVC](https://javadoc.io/doc/io.github.microsphere-projects/microsphere-spring-cloud-gateway-server-webmvc)
+- [DeepWiki](https://deepwiki.com/microsphere-projects/microsphere-gateway) and [ZRead](https://zread.ai/microsphere-projects/microsphere-gateway) for browsable project context
+- Javadocs: 
+  - [WebFlux](https://javadoc.io/doc/io.github.microsphere-projects/microsphere-spring-cloud-gateway-server-webflux)
 
 ## Maintainers and Contributing
 
