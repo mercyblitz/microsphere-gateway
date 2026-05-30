@@ -69,4 +69,21 @@
 
 *This release includes minor enhancements, documentation updates, and improved workflows to streamline development.* 
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.5...0.1.6
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.5...0.1.6## v0.1.7
+
+# Release Notes - Version 0.1.7
+
+## Dependency Updates
+- **Microsphere Spring Cloud**: Upgraded to version `0.1.14`. ([27de74e](#))
+
+## Code Quality Improvements
+- Removed duplicate blank lines and trailing whitespace in Java source code for improved readability and cleanliness. ([7520015](#))
+
+## Other Changes
+- Version bump to `0.1.7` post `0.1.6` release for continued development. ([8872c33](#)) 
+
+---
+
+**Note**: No new features, documentation updates, bug fixes, or test improvements in this release.
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.6...0.1.7
