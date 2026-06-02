@@ -86,4 +86,17 @@
 
 **Note**: No new features, documentation updates, bug fixes, or test improvements in this release.
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.6...0.1.7
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.6...0.1.7## v0.1.8
+
+# Release Notes: Version 0.1.8
+
+## Dependency Updates
+- Upgraded `microsphere-spring-cloud` to version **0.1.15** for enhanced compatibility and bug fixes. ([4516982](#))
+
+## Build and Workflow Enhancements
+- Merged `release-1.x` changes into `dev-1.x` branch for alignment and maintenance. ([328129d](#))
+- Updated version to prepare for the next patch after publishing **0.1.7**. ([657ad15](#))
+
+---
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.7...0.1.8
