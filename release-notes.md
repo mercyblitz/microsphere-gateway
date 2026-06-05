@@ -99,4 +99,11 @@
 
 ---
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.7...0.1.8
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.7...0.1.8## v0.1.9
+
+# Release Notes - Version 0.1.9
+
+## Other Changes
+- **Chore:** Bump version to the next patch after publishing 0.1.8. (`3893088`)
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.8...0.1.9
