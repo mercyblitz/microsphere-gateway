@@ -106,4 +106,22 @@
 ## Other Changes
 - **Chore:** Bump version to the next patch after publishing 0.1.8. (`3893088`)
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.8...0.1.9
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.8...0.1.9## v0.1.10
+
+# Release Notes for Version 0.1.10
+
+## New Features
+- **WebFlux Support**: Added WebFlux availability condition to enhance compatibility. ([3e91d80](#))
+
+## Test Improvements
+- Removed `EnableWebFluxExtension` from tests to streamline the codebase. ([3ec87cf](#))
+
+## Dependency Updates
+- Bumped parent and BOM versions to `0.1.19`. ([ebb1658](#))
+- Updated `microsphere-spring-cloud` to version `0.1.18`. ([488a05b](#))
+
+## Build and Workflow Enhancements
+- Merged `release-1.x` into `dev-1.x` for codebase alignment. ([2c6a3a2](#), [f2127cb](#))
+- Adjusted versioning to prepare for the next patch release. ([8631694](#))
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.9...0.1.10
