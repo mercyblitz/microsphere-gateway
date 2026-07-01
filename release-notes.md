@@ -144,4 +144,18 @@
 
 ---
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.10...0.1.12
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.10...0.1.12## v0.1.13
+
+# Release Notes for Version 0.1.13
+
+## Dependency Updates
+- Updated Microsphere Spring Cloud to `0.1.21`. ([98f81b7](https://github.com/mercyblitz/microsphere-gateway/commit/98f81b7))
+
+## Build and Workflow Enhancements
+- Merged `release-1.x` into `dev-1.x` to streamline development. ([78433b9](https://github.com/mercyblitz/microsphere-gateway/commit/78433b9))
+- Prepared version bump to next patch after publishing `0.1.12`. ([15e8cde](https://github.com/mercyblitz/microsphere-gateway/commit/15e8cde))
+
+## Other Changes
+- Merged contributions from `dev-1.x` branch. ([5185c1e](https://github.com/mercyblitz/microsphere-gateway/commit/5185c1e), [518fcb8](https://github.com/mercyblitz/microsphere-gateway/commit/518fcb8))
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.12...0.1.13
