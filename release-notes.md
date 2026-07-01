@@ -154,4 +154,21 @@ For more details, see the [Full Changelog](https://github.com/your-repo/compare/
 
 --- 
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.2.9...0.2.10
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.2.9...0.2.10## v0.2.11
+
+# Release Notes - Version 0.2.11
+
+## New Features
+- **Gateway Features**: Registered metadata for gateway features. ([d495c83](#))
+
+## Dependency Updates
+- **Microsphere Spring Cloud**: Bumped version to `0.2.20`. ([61eb871](#))
+
+## Other Changes
+- Renamed "web endpoint bind advisor" to "listener" for improved clarity. ([a36b81d](#))
+
+---
+
+**Note**: This release includes minor internal merges and version bumps but no user-facing breaking changes.
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.2.10...0.2.11
