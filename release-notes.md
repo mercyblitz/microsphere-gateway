@@ -171,4 +171,11 @@ For more details, see the [Full Changelog](https://github.com/your-repo/compare/
 
 **Note**: This release includes minor internal merges and version bumps but no user-facing breaking changes.
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.2.10...0.2.11
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.2.10...0.2.11## v0.2.12
+
+# Release Notes - Version 0.2.12
+
+### Other Changes
+- Bumped version to the next patch after publishing `0.2.11`. (`f20486f`)  
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.2.11...0.2.12
