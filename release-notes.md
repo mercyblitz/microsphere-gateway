@@ -124,4 +124,24 @@
 - Merged `release-1.x` into `dev-1.x` for codebase alignment. ([2c6a3a2](#), [f2127cb](#))
 - Adjusted versioning to prepare for the next patch release. ([8631694](#))
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.9...0.1.10
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.9...0.1.10## v0.1.12
+
+# Release Notes - Version 0.1.12
+
+## New Features
+- Added support for metadata and condition tests. ([d3dfdf5](#))
+
+## Improvements
+### Refactoring
+- Refactored web-endpoint bind advisor to use a listener approach. ([6436445](#))
+
+## Dependency Updates
+- Updated Spring Cloud parent to version 0.1.20. ([706560f](#))
+
+## Build and Workflow Enhancements
+- Merged `release-1.x` into `dev-1.x` for streamlined development. ([2b85cac](#))
+- Bumped version to `0.1.12` post `0.1.10` release. ([44cca33](#))
+
+---
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.10...0.1.12
