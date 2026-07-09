@@ -17,7 +17,6 @@
 package io.microsphere.spring.cloud.gateway.server.webflux.autoconfigure;
 
 import io.microsphere.spring.boot.webflux.autoconfigure.WebFluxAutoConfiguration;
-import io.microsphere.spring.boot.webflux.autoconfigure.condition.ConditionalOnWebFluxAvailable;
 import io.microsphere.spring.cloud.client.discovery.ReactiveDiscoveryClientAdapter;
 import io.microsphere.spring.cloud.client.discovery.autoconfigure.ReactiveDiscoveryClientAutoConfiguration;
 import io.microsphere.spring.cloud.gateway.commons.annotation.ConditionalOnMicrosphereWebEndpointMappingEnabled;
@@ -47,7 +46,6 @@ import static org.springframework.boot.autoconfigure.condition.SearchStrategy.CU
 @ConditionalOnDiscoveryEnabled
 @ConditionalOnReactiveDiscoveryEnabled
 @ConditionalOnMicrosphereWebEndpointMappingEnabled
-@ConditionalOnWebFluxAvailable
 @AutoConfigureAfter(
         value = {
                 GatewayAutoConfiguration.class,
