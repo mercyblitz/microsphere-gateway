@@ -15,34 +15,52 @@
  * limitations under the License.
  */
 
-package io.microsphere.spring.cloud.gateway.commons.annotation;
+package io.microsphere.spring.cloud.gateway.server.webflux.annotation;
 
-import io.microsphere.spring.cloud.gateway.commons.constants.CommonsPropertyConstants;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.context.annotation.Conditional;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-import static io.microsphere.spring.cloud.gateway.commons.constants.CommonsPropertyConstants.MICROSPHERE_GATEWAY_ENABLED_PROPERTY_NAME;
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
- * The conditional annotation meta-annotates {@link ConditionalOnProperty @ConditionalOnProperty} for
- * Microsphere Spring Cloud Gateway enabled.
+ * Indicates that the annotated element is only available when Spring Cloud Gateway is available.
+ * <h3>Example Usage</h3>
+ * <h4>Example usage on a configuration class:</h4>
+ * <pre>{@code
+ * @Configuration
+ * @ConditionalOnGatewayAvailable
+ * public class MyGatewayConfig {
+ *     // ...
+ * }
+ * }</pre>
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @see Conditional
+ * <h4>Example usage on a bean method:</h4>
+ * <pre>{@code
+ * @Bean
+ * @ConditionalOnGatewayAvailable
+ * public MyCustomFilter myCustomFilter() {
+ *     return new MyCustomFilter();
+ * }
+ * }</pre>
+ *
+ * @see ConditionalOnGatewayEnabled
  * @see ConditionalOnProperty
- * @see CommonsPropertyConstants#MICROSPHERE_GATEWAY_ENABLED_PROPERTY_NAME
+ * @see ConditionalOnClass
+ * @see org.springframework.cloud.gateway.config.GatewayProperties
  * @since 1.0.0
  */
 @Retention(RUNTIME)
 @Target({TYPE, METHOD})
 @Documented
-@ConditionalOnProperty(name = MICROSPHERE_GATEWAY_ENABLED_PROPERTY_NAME, matchIfMissing = true)
-public @interface ConditionalOnMicrosphereGatewayEnabled {
+@ConditionalOnGatewayEnabled
+@ConditionalOnClass(name = {
+        "org.springframework.cloud.gateway.config.GatewayProperties"    // Spring Cloud Gateway Server WebFlux API
+})
+public @interface ConditionalOnGatewayAvailable {
 }
