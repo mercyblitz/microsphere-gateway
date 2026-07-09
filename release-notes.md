@@ -158,4 +158,32 @@
 ## Other Changes
 - Merged contributions from `dev-1.x` branch. ([5185c1e](https://github.com/mercyblitz/microsphere-gateway/commit/5185c1e), [518fcb8](https://github.com/mercyblitz/microsphere-gateway/commit/518fcb8))
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.12...0.1.13
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.12...0.1.13## v0.1.14
+
+```markdown
+# Release Notes - Version 0.1.14
+
+## New Features
+- Added gateway starter as an optional dependency for enhanced modularity. ([e39daf2](#))
+
+## Bug Fixes
+- Fixed base class issues in gateway auto-configuration tests. ([ff15cae](#))
+
+## Improvements
+### Gateway Enhancements
+- Refined gateway WebFlux conditional wiring for better configurability. ([26c75c6](#))
+- Improved gateway availability conditions. ([4cae6e0](#))
+- Aligned gateway enable property references for consistency. ([9d80238](#))
+- Updated gateway modules to align with new dependencies. ([0616a89](#))
+
+### Dependency Updates
+- Upgraded Microsphere Spring Cloud dependency to `0.1.22`. ([e183b87](#))
+
+### Build and Workflow Enhancements
+- Merged `release-1.x` into `dev-1.x` to consolidate branches. ([62254e5](#))
+- Bumped version to the next patch after publishing `0.1.13`. ([d3c06ca](#))
+
+---
+```
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.13...0.1.14
