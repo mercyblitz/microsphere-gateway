@@ -14,9 +14,8 @@
     <version>${revision}</version>
     <packaging>pom</packaging>
 
-    <name>Microsphere :: Gateway</name>
-    <description>Microsphere Projects for Gateway</description>
-    <url>https://github.com/microsphere-projects/microsphere-gateway</url>
+    <name>Microsphere :: Gateway :: Spring Cloud Gateway</name>
+    <description>Microsphere Spring Cloud Gateway</description>
 
     <organization>
         <name>Microsphere</name>
