@@ -60,7 +60,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Documented
 @ConditionalOnGatewayEnabled
 @ConditionalOnClass(name = {
-        "org.springframework.cloud.gateway.config.GatewayProperties"    // Spring Cloud Gateway Server WebFlux API
+        "org.springframework.cloud.gateway.config.GatewayProperties"    // Spring Cloud Gateway API
 })
 public @interface ConditionalOnGatewayAvailable {
 }

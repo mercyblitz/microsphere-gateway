@@ -34,7 +34,7 @@ import static org.springframework.cloud.gateway.config.GatewayProperties.PREFIX;
 public interface GatewayPropertyConstants {
 
     /**
-     * The property name of enabling Spring Cloud Server WebFlux Gateway: "spring.cloud.gateway.server.webflux.enabled"
+     * The property name of enabling Spring Cloud Gateway: "spring.cloud.gateway.enabled"
      *
      * @see GatewayProperties#PREFIX
      */
