@@ -38,6 +38,13 @@
             <artifactId>microsphere-spring-boot-webflux</artifactId>
         </dependency>
 
+        <!-- Spring Cloud Gateway -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <!-- Spring Cloud Commons-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -104,19 +111,5 @@
         </dependency>
 
     </dependencies>
-
-    <profiles>
-        <profile>
-            <id>spring-cloud-2022</id>
-            <dependencies>
-                <!-- Spring Cloud Gateway -->
-                <dependency>
-                    <groupId>org.springframework.cloud</groupId>
-                    <artifactId>spring-cloud-starter-gateway</artifactId>
-                    <optional>true</optional>
-                </dependency>
-            </dependencies>
-        </profile>
-    </profiles>
 
 </project>
