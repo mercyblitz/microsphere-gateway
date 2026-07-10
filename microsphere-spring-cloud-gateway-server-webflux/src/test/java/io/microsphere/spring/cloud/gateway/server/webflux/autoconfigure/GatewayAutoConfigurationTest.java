@@ -55,7 +55,7 @@ class GatewayAutoConfigurationTest extends ReactiveWebAutoConfigurationTest<Gate
 
     @Override
     protected void configureGlobalDisabledPropertyValues(Set<String> globalDisabledPropertyValues) {
-        globalDisabledPropertyValues.add("spring.cloud.gateway.server.webflux.enabled=false");
+        globalDisabledPropertyValues.add("spring.cloud.gateway.enabled=false");
         globalDisabledPropertyValues.add("microsphere.spring.cloud.gateway.enabled=false");
         globalDisabledPropertyValues.add("microsphere.spring.boot.webflux.enabled=false");
     }
