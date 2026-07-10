@@ -186,4 +186,29 @@
 ---
 ```
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.13...0.1.14
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.13...0.1.14## v0.1.15
+
+# Release Notes - Version 0.1.15
+
+## New Features
+- Improved handling of gateway auto-configuration with classpath guards. (#274bfc7)
+- Extracted `gateway-starter` from the 2022 profile for better modularity. (#6c81759)
+
+## Bug Fixes
+- Ensured consistent use of unified/canonical gateway disable properties in tests. (#c978e75, #a450b3a)
+
+## Dependency Updates
+- Bumped parent BOM to version `0.1.23`. (#bcd2328)
+
+## Test Improvements
+- Re-enabled WebFlux gateway auto-configuration tests. (#79dd8a4)
+
+## Build and Workflow Enhancements
+- Refined gateway module dependency setup for streamlined builds. (#1206c61)
+- Merged branch `release-1.x` into `dev-1.x` to synchronize changes. (#a72f984)
+
+---
+
+Full Changelog: [0.1.14...0.1.15](#) 
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.14...0.1.15
