@@ -211,4 +211,21 @@
 
 Full Changelog: [0.1.14...0.1.15](#) 
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.14...0.1.15
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.14...0.1.15## v0.1.16
+
+# Release Notes: Version 0.1.16
+
+### New Features
+- Added optional `spring-cloud-commons` dependency for enhanced flexibility. ([ebccc9f](https://github.com/mercyblitz/))
+
+### Dependency Updates
+- Marked Microsphere runtime dependencies as optional. ([d8be6d0](https://github.com/mercyblitz/))
+- Upgraded Microsphere Spring Cloud to `0.1.24`. ([7c7956c](https://github.com/mercyblitz/))
+
+### Build and Workflow Enhancements
+- Merged `release-1.x` into `dev-1.x` to update development branch. ([741f1e8](https://github.com/mercyblitz/))
+- Bumped version to next patch after publishing `0.1.15`. ([b98fc21](https://github.com/mercyblitz/))
+
+---
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-gateway/compare/0.1.15...0.1.16
